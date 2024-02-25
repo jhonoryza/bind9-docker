@@ -1,0 +1,16 @@
+acl internal {
+    192.168.18.0/24;
+};
+
+options {
+    forwarders {
+        10.0.0.2 port 5054;
+        47.245.110.65 port 5053;
+    };
+    allow-query { internal; };
+};
+
+zone "local.labkita.my.id" IN {
+    type master;
+    file "/etc/bind/local.zone";
+};

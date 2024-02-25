@@ -1,0 +1,43 @@
+$TTL 2d
+
+$ORIGIN local.labkita.my.id.
+
+@               IN      SOA     ns.local.labkita.my.id. info.labkita.my.id. (
+                                2022122800      ; serial
+                                12h             ; refresh
+                                15m             ; retry
+                                3w              ; expire
+                                2h              ; minimum ttl
+                                )
+
+                IN      NS      ns.local.labkita.my.id.
+
+ns              IN      A       192.168.18.106
+
+; -- add dns records below
+
+;portainer       IN      A       192.168.18.106
+;traefik         IN      A       192.168.18.106
+;ebook           IN      A       192.168.18.106
+;music           IN      A       192.168.18.106
+;media           IN      A       192.168.18.106
+;pass            IN      A       192.168.18.106
+;mail            IN      A       192.168.18.106
+;minio           IN      A       192.168.18.106
+;minio2          IN      A       192.168.18.106
+;s3.dash         IN      A       192.168.18.106
+;s3.api          IN      A       192.168.18.106
+;filestash       IN      A       192.168.18.106
+;proxmox         IN      A       192.168.18.106
+;joplin          IN      A       192.168.18.106
+;notes           IN      A       192.168.18.106
+;lblog           IN      A       192.168.18.106
+;blog            IN      A       192.168.18.106
+;filament-blog   IN      A       192.168.18.106
+;meilisearch     IN      A       192.168.18.106
+;elk             IN      A       192.168.18.106
+;wp1             IN      A       192.168.18.106
+;teleport        IN      A       192.168.18.106
+
+*               IN      A       192.168.18.106
+*.test          IN      A       192.168.18.108
