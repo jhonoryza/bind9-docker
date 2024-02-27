@@ -4,6 +4,7 @@ services:
   bind9:
     container_name: bind9
     image: ubuntu/bind9:latest
+      #image: internetsystemsconsortium/bind9:9.16
     environment:
       - BIND9_USER=root
       - TZ=Asia/Jakarta
